@@ -2,16 +2,27 @@
 layout: about
 image: /assets/img/blog/hydejack-9.jpg
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  All About Me
 hide_description: true
 redirect_from:
   - /download/
 ---
 
-# About
+# About Me
 
 <!--author-->
+
+## Hi there 👋
+
+ 🔭 I'm a software engineer and architect who works within the Microsoft ecosystem!
+ 
+You'll often find me consulting with businesses and development teams on how to deliver complex custom software solutions, as well as learning how to use AI Software Engineering tools and techniques to supercharge your productivity.
+
+I've been following AI technology for the last decade, and believe we're in an exciting time for building applications and new AI-based user experiences.
+
+📫 How to reach me:
+
+I share content and learnings through this blog and my [LinkedIn account](https://www.linkedin.com/in/ben-leane/).
 
 ## Hydejack
 
