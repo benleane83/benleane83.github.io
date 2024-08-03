@@ -1,3 +1,12 @@
+---
+layout: post
+title: Example Content II
+description: >
+  A page showing how regular markdown content is styled in Hydejack.
+image: /assets/img/blog/example-content-ii.jpg
+sitemap: false
+---
+
 ## AI-Powered Testing: How is quality engineering changing in 2024?
 
 ![AI-Powered Testing](/assets/img/blog/ai-powered-testing-intro.png)

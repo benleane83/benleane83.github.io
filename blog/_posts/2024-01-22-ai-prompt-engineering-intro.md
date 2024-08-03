@@ -1,3 +1,11 @@
+---
+layout: post
+title: AI Prompt Engineering - the next must-have IT skill?
+description: >
+  A look at prompt engineering as a new key skill for IT professionals - key concepts involved, learning resources, and impact to the IT workforce overall
+image: /assets/img/blog/ai-prompt-engineering-intro.jpg
+---
+
 ## AI Prompt Engineering - the next must-have IT skill?
 
 ![AI Prompt Engineering](/assets/img/blog/ai-prompt-engineering-intro.jpg)
@@ -21,9 +29,9 @@ According to some, the current answer is 'everyone'. GenAI is showing signs of b
 
 Here at Avanade, our L&D team created a custom Prompt Engineering course that will become mandatory for all employees (IT, Sales, HR, etc). It’s an hour of hands-on training that teaches basic concepts and puts them into practice. We designed it to fit our needs, but if you're looking for something pre-packaged then here are some of the better courses from 2023:
 
-[Getting Started on Prompt Engineering with Generative AI | Pluralsight](https://app.pluralsight.com/library/courses/getting-started-prompt-engineering-generative-ai/table-of-contents?_gl=1*14ib0yn*_ga*MTk4ODgyODc0My4xNzAzODQ0NjA0*_ga_525M96C6Y1*MTcwMzg0NDYwMy4xLjEuMTcwMzg0NDczNS42MC4wLjA.*_gcl_au*NTkwMjMwNDIwLjE3MDM4NDQ2MDg.)
+[Getting Started on Prompt Engineering with Generative AI - Pluralsight](https://app.pluralsight.com/library/courses/getting-started-prompt-engineering-generative-ai)
 
-[Prompt Engineering for ChatGPT | Coursera](https://www.coursera.org/learn/prompt-engineering)
+[Prompt Engineering for ChatGPT - Coursera](https://www.coursera.org/learn/prompt-engineering)
 
 ### Key concepts to learn
 

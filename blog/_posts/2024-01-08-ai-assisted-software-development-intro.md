@@ -1,3 +1,11 @@
+---
+layout: post
+title: AI-Assisted Software Development: What it is, how it works, and why you should care
+description: >
+  A intro to AI-Assisted Software Development as a growing trend in the IT industry, and some early learnings from rolling out across enterprises
+image: /assets/img/blog/ai-development-intro.jpg
+---
+
 ## AI-Assisted Software Development: What it is, how it works, and why you should care
 
 ![AI Development](/assets/img/blog/ai-development-intro.jpg)
@@ -12,7 +20,7 @@ At the same time the broader Microsoft Copilot suite has been evolving with new 
 
 ### How Real Is The Hype Right Now?
 
-As we end 2023, many organisations including Avanade are progressing global rollouts of GitHub Copilot, Azure OpenAI Service and other related tools. Avanade started our own GitHub Copilot rollout almost two years ago, and has since acquired licenses for the majority of our developers worldwide. We're observing usage trends across internal and client facing teams, to see how their work has changed since adopting. Very quickly teams have been able to realise similar coding productivity and quality benefits as advertised by the tool vendors (40% or more), and in process freeing up developers to tackle more higher value or innovative tasks. We're now supporting our customers to run their own AI SDLC pilots, starting with GitHub Copilot usage and expanding from there.
+As we end 2023, many organisations including Avanade are progressing global rollouts of GitHub Copilot, Azure OpenAI Service and other related tools. Avanade started our own GitHub Copilot rollout [almost two years ago](https://www.avanade.com/en/blogs/techs-and-specs/software-development/github-copilot), and has since acquired licenses for the majority of our developers worldwide. We're observing usage trends across internal and client facing teams, to see how their work has changed since adopting. Very quickly teams have been able to realise similar coding productivity and quality benefits as advertised by the tool vendors (40% or more), and in process freeing up developers to tackle more higher value or innovative tasks. We're now supporting our customers to run their own AI SDLC pilots, starting with GitHub Copilot usage and expanding from there.
 
 Along the way we've realised several important lessons about this generation of AI tools:
 
