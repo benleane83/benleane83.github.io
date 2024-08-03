@@ -45,6 +45,7 @@ A travel planner agent awaits a request from you to help plan a trip itinerary. 
 ![AutoGen Studio Beta](/assets/img/blog/autogen-studio.png)
 
 AutoGen Studio Beta
+{:.figcaption}
 
 A more evolved example may be Tesla's Autopilot system - while the exact details of this are unknown, it is likely a form of multi-agent ecosystem where specialist agents collaborate with human input to produce a single outcome.
 
