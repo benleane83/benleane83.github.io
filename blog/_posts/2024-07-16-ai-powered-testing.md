@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Example Content II
+title: AI-Powered Testing: How is quality engineering changing in 2024?
 description: >
-  A page showing how regular markdown content is styled in Hydejack.
-image: /assets/img/blog/example-content-ii.jpg
+  An brief overview of new AI testing capabilities available and vendor options.
+image: /assets/img/blog/ai-powered-testing-intro.jpg
 sitemap: false
 ---
 
