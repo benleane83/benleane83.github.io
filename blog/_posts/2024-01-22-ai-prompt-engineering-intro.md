@@ -4,6 +4,7 @@ title: AI Prompt Engineering - the next must-have IT skill?
 description: >
   A look at prompt engineering as a new key skill for IT professionals - key concepts involved, learning resources, and impact to the IT workforce overall
 image: /assets/img/blog/ai-prompt-engineering-intro.jpg
+sitemap: true
 ---
 
 ## AI Prompt Engineering - the next must-have IT skill?

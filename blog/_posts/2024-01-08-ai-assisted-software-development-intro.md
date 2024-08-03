@@ -4,6 +4,7 @@ title: AI-Assisted Software Development: What it is, how it works, and why you s
 description: >
   A intro to AI-Assisted Software Development as a growing trend in the IT industry, and some early learnings from rolling out across enterprises
 image: /assets/img/blog/ai-development-intro.jpg
+sitemap: true
 ---
 
 ## AI-Assisted Software Development: What it is, how it works, and why you should care

@@ -4,12 +4,8 @@ title: AI-Powered Testing: How is quality engineering changing in 2024?
 description: >
   An brief overview of new AI testing capabilities available and vendor options.
 image: /assets/img/blog/ai-powered-testing-intro.jpg
-sitemap: false
+sitemap: true
 ---
-
-## AI-Powered Testing: How is quality engineering changing in 2024?
-
-![AI-Powered Testing](/assets/img/blog/ai-powered-testing-intro.png)
 
 AI-assisted development tools like GitHub Copilot are in the spotlight this year in the Software Engineering community. There's no doubt they've had an immediate impact for developers who adopt them, but there's also growing interest in AI-enabling other personas in the Software Development lifecycle.
 
