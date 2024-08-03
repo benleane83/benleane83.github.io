@@ -9,8 +9,6 @@ sitemap: true
 
 ## AI Prompt Engineering - the next must-have IT skill?
 
-![AI Prompt Engineering](/assets/img/blog/ai-prompt-engineering-intro.jpg)
-
 2023's Generative AI boom introduced lots of new lingo into our vocabulary, and 'Prompt Engineering' is one that intrigues me. It refers to a new skill/discipline, one vital to success with GenAI tools, but non-existent just a few years ago.
 
 In 2024, companies everywhere are now racing to train employees on this emerging area, to help them maximise benefits that GenAI can offer.

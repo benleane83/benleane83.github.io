@@ -9,8 +9,6 @@ sitemap: true
 
 ## AI-Assisted Software Development: What it is, how it works, and why you should care
 
-![AI Development](/assets/img/blog/ai-development-intro.jpg)
-
 While the term 'AI-Assisted Software Development' isn't new this year (it became prominent in 2018 with launch of tools such as TabNine and Microsoft's IntelliCode), it's clear that 2023 is the year that it gained mainstream attention. Surging interest around Generative AI, ChatGPT, and Microsoft's own Copilot suite brought a renewed focus on AI productivity gains across all industries, and Software Development seemed a prime candidate.
 
 Earlier tools such as TabNine and GitHub Copilot (released in preview form in 2021) delivered improvements to a range of common coding tasks, using their own AI models to recommend code snippets to developers. The experience was similar to previous tooling such as JetBrains ReSharper, but more intuitive about suggesting and generating code based on the context provided.

@@ -4,12 +4,10 @@ title: AI Agents and Multi-Agent Workflows: How Will They Impact Software Develo
 description: >
   A look at Multi-Agent workflows in AI - the patterns being introduced, and current tooling available to developers. Includes examples for AutoGen Studio.
 image: /assets/img/blog/multi-agent-workflows-intro.jpg
-sitemap: false
+sitemap: true
 ---
 
 ## AI Agents and Multi-Agent Workflows: How Will They Impact Software Development?
-
-![Multi Agent Workflows](/assets/img/blog/multi-agent-workflows-intro.png)
 
 This week I've been getting to know [AutoGen Studio](https://autogen-studio.com/), one of the in-development projects from Microsoft Research related to AI agents. AutoGen is one of a few open-source toolsets emerging for development of these (CrewAI and LangGraph being others), and Studio is their brand new low-code UI for managing them.
 
