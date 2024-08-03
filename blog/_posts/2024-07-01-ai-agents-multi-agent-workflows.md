@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Agents and Multi-Agent Workflows: How Will They Impact Software Development?
+title: AI Agents and Multi-Agent Workflows - How Will They Impact Software Development?
 description: >
   A look at Multi-Agent workflows in AI - the patterns being introduced, and current tooling available to developers. Includes examples for AutoGen Studio.
 image: /assets/img/blog/multi-agent-workflows-intro.jpg
