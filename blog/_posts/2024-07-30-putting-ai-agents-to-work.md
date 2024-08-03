@@ -3,7 +3,7 @@ layout: post
 title: Putting AI Agents to work: moving beyond chat with tools
 description: >
   An intro to the concept of tools or plugins in AI agents, and how they are used in frameworks like Azure OpenAI Assistants and Autogen to do more than chat.
-image: /assets/img/blog/ai-agents-tools-intro.jpeg
+image: /assets/img/blog/ai-agents-tools-intro.jpg
 sitemap: true
 ---
 
