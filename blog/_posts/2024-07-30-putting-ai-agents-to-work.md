@@ -79,7 +79,7 @@ code_writer_agent = ConversableAgent(
     "The code blocks will be executed in the IPython kernel in the order you suggest them.\n"
     "All necessary libraries have already been installed.\n"
     "Once the task is done, returns 'TERMINATE'.",
-    llm_config={"config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY"), "api_type": "azure", "base_url": "https://ai-benleaneai7078721698156432.cognitiveservices.azure.com/", "api_version": "2023-12-01-preview"}]},
+    llm_config={"config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY"), "api_type": "azure", "base_url": "https://[youraiservice].cognitiveservices.azure.com/", "api_version": "2023-12-01-preview"}]},
 )
 
 code_executor_agent = ConversableAgent(
@@ -146,7 +146,7 @@ assistant = ConversableAgent(
     system_message="You are a helpful AI assistant. "
     "You can help with simple calculations. "
     "Return 'TERMINATE' when the task is done.",
-    llm_config={"config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY"), "api_type": "azure", "base_url": "https://ai-benleaneai7078721698156432.cognitiveservices.azure.com/", "api_version": "2023-12-01-preview"}]},
+    llm_config={"config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY"), "api_type": "azure", "base_url": "https://[youraiservice].cognitiveservices.azure.com/", "api_version": "2023-12-01-preview"}]},
 )
 
 # The user proxy agent is used for interacting with the assistant agent
