@@ -49,12 +49,51 @@ Each tool is described with metadata that allows an agent to understand its purp
 
 The first example that blew my mind was Autogen's [Custom Code Executor](https://microsoft.github.io/autogen/docs/topics/code-execution/custom-executor) sample. Grab the Jupyter Notebook off the link to try for yourself, and it'll have you first setting up Autogen along with some supporting Python libraries:
 
+
+~~~py
+! pip -qqq install pyautogen matplotlib yfinance
+
+import os
+from typing import List
+
+from IPython import get_ipython
+
+from autogen import ConversableAgent
+from autogen.coding import CodeBlock, CodeExecutor, CodeExtractor, CodeResult, MarkdownCodeExtractor
+~~~
+
 Setting up Autogen environment and dependencies
 {:.figcaption}
 
 You'll then create a new agent using a GPT model (note that I modified their original sample to use Azure OpenAI) and a Code Executor tool, with instructions on how to use custom code to solve problems provided by the user.
 
 You then run that agent with a sample prompt that requests a plot chart showing the market caps of the Top 7 listed companies on Yahoo Finance:
+
+~~~py
+code_writer_agent = ConversableAgent(
+    name="CodeWriter",
+    system_message="You are a helpful AI assistant.\n"
+    "You use your coding skill to solve problems.\n"
+    "You have access to a IPython kernel to execute Python code.\n"
+    "You can suggest Python code in Markdown blocks, each block is a cell.\n"
+    "The code blocks will be executed in the IPython kernel in the order you suggest them.\n"
+    "All necessary libraries have already been installed.\n"
+    "Once the task is done, returns 'TERMINATE'.",
+    llm_config={"config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY"), "api_type": "azure", "base_url": "https://ai-benleaneai7078721698156432.cognitiveservices.azure.com/", "api_version": "2023-12-01-preview"}]},
+)
+
+code_executor_agent = ConversableAgent(
+    name="CodeExecutor",
+    llm_config=False,
+    code_execution_config={"executor": NotebookExecutor()},
+    is_termination_msg=lambda msg: "TERMINATE" in msg.get("content", "").strip().upper(),
+)
+
+chat_result = code_executor_agent.initiate_chat(
+    code_writer_agent,
+    message="Create a plot showing the market caps of the top 7 publicly listed companies using data from Yahoo Finance.",
+)
+~~~
 
 Creating an agent with a code execution tool
 {:.figcaption}
@@ -72,15 +111,79 @@ You're probably not alone if the thought of leaving AI agents to write their own
 
 Now let's take a slightly more paired back example, focusing on custom function integration within an agent. This comes from Autogen's Calculator Tool sample, which sets up a simple calculator function that accepts two numbers and an operator:
 
+~~~py
+from typing import Annotated, Literal
+
+Operator = Literal["+", "-", "*", "/"]
+
+
+def calculator(a: int, b: int, operator: Annotated[Operator, "operator"]) -> int:
+    if operator == "+":
+        return a + b
+    elif operator == "-":
+        return a - b
+    elif operator == "*":
+        return a * b
+    elif operator == "/":
+        return int(a / b)
+    else:
+        raise ValueError("Invalid operator")
+~~~
+
 Setting up a custom function tool
 {:.figcaption}
 
 Once that's defined, create a new agent with the tool and some basic instructions to 'solve simple calculations':
 
+~~~py
+import os
+
+from autogen import ConversableAgent
+
+# Let's first define the assistant agent that suggests tool calls.
+assistant = ConversableAgent(
+    name="Assistant",
+    system_message="You are a helpful AI assistant. "
+    "You can help with simple calculations. "
+    "Return 'TERMINATE' when the task is done.",
+    llm_config={"config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY"), "api_type": "azure", "base_url": "https://ai-benleaneai7078721698156432.cognitiveservices.azure.com/", "api_version": "2023-12-01-preview"}]},
+)
+
+# The user proxy agent is used for interacting with the assistant agent
+# and executes tool calls.
+user_proxy = ConversableAgent(
+    name="User",
+    llm_config=False,
+    is_termination_msg=lambda msg: msg.get("content") is not None and "TERMINATE" in msg["content"],
+    human_input_mode="NEVER",
+)
+
+# Register the tool signature with the assistant agent.
+assistant.register_for_llm(name="calculator", description="A simple calculator")(calculator)
+
+# Register the tool function with the user proxy agent.
+user_proxy.register_for_execution(name="calculator")(calculator)
+~~~
+
 Configuring an agent with a custom function
 {:.figcaption}
 
 Finally, start a chat with your agent and pass it a complex math equation, with only the single function available to use. The agent will decompose it and use its calculator to piece together the answer.
+
+~~~py
+from autogen import register_function
+
+# Register the calculator function to the two agents.
+register_function(
+    calculator,
+    caller=assistant,  # The assistant agent can suggest calls to the calculator.
+    executor=user_proxy,  # The user proxy agent can execute the calculator calls.
+    name="calculator",  # By default, the function name is used as the tool name.
+    description="A simple calculator",  # A description of the tool.
+)
+
+chat_result = user_proxy.initiate_chat(assistant, message="What is (44232 + 13312 / (232 - 32)) * 5?")
+~~~
 
 Running the agent with an example math equation
 {:.figcaption}
