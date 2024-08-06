@@ -1,20 +1,11 @@
-# Hydejack Starter Kit
+## Welcome to my GitHub Pages blog
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+ 🔭 I'm a software engineer and architect who works within the Microsoft ecosystem.
+ 
+You'll find me working with businesses and development teams on how to deliver complex custom software solutions, and how to use AI Software Engineering tools and techniques to supercharge your productivity.
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+I've been following AI technology for the last decade, and believe we're in an exciting time for building applications and new AI-based user experiences.
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+📫 How to reach me:
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
-
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+I share content and learnings mostly through my [Blog](https://benleane83.github.io) and [LinkedIn account](https://www.linkedin.com/in/ben-leane/).
