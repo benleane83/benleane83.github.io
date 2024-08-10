@@ -17,3 +17,15 @@ While this is not the magic 'write a prompt, press the button and a finished pie
 ### Tips and Tricks
 
 https://github.com/githubnext/copilot-workspace-user-manual/blob/main/tips-and-tricks.md
+
+### 1. Everything is made to be edited and re-run
+
+### 2. It features Undo/Redo
+
+### 3. Any edits made directly in your Workspace session or Codespace are synced
+
+### 4. You can share your sessions with others
+
+### 5. It works great on mobile
+
+### 6. You can trigger off Issues in a separate repo to your code (or vice versa)
