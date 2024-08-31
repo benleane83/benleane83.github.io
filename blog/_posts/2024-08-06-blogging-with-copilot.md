@@ -52,6 +52,7 @@ Great, because as a simple markup language, these are easily searchable by Copil
 For any docs sitting in the same repo as you're editing, they're likely already being searched by Copilot Chat when using the @workspace agent. In my case Hydejack's docs are bundled into the repo template, enabling questions like this:
 
 > "Copilot: How do I use the Hydejack blog layout in a subdirectory?"
+{:.lead}
 
 ![Copilot Workspace Agent](/assets/img/blog/copilot-workspace-command.png)
 
