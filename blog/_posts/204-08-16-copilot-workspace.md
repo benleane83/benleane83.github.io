@@ -3,18 +3,18 @@ layout: post
 title: 5 reasons you're going to love Copilot Workspace
 description: >
   An early look at the new Copilot Workspace IDE, in private preview mode from GitHub and already featuring some exciting features
-image: /assets/img/blog/ai-agents-tools-intro.jpg
-sitemap: false
-published: false
+image: /assets/img/blog/workspace-banner.webp
+sitemap: true
+published: true
 ---
 
 ## 5 reasons you're going to love Copilot Workspace
 
-I've been lucky enough to have access to the technical preview of [GitHub Copilot Workspace](https://githubnext.com/projects/copilot-workspace) for the last 2 months, and I'm having a blast so far!
+I've been lucky enough to have access to the technical preview of [GitHub Copilot Workspace](https://githubnext.com/projects/copilot-workspace) for the last few months, and I'm having a blast so far!
 
 While this is not the magic 'write a prompt, press the button and a finished piece of software pops out' app you might be dreaming of, it represents a potentially huge leap forward in abstracting developer tasks within a natural language UI. And for an early preview, I was surprised at how many fun features and general UI polishes are there already.
 
-Why do I think this may be another game changer for developer productivity and satisfaction? Here are 5 reasons based on my own experiences:
+Why do I think this may be another game changer for developer productivity and satisfaction? Here are 5 reasons based on my own experiences (with a caveat that this is pre-release functionality and may change):
 
 ![Workspace IDE](/assets/img/blog/workspace-ide.png)
 
@@ -23,9 +23,9 @@ Why do I think this may be another game changer for developer productivity and s
 Wait, so the generated code isn't perfect on the first try?
 Likely not. 
 
-Like any AI editor, Workspace will get you most of the way there on common programming tasks on the first attempt, and then need refining into a finished product.
+Like any AI editor, Workspace will get you most of the way through common programming tasks on the first attempt, and then need refining into a finished product.
 Where the Workspace IDE shines though is in the '**co-editing experience**'. Every element, from the initial task prompt through to specs to code, is made to be edited and re-generated on the fly.
-That means less emphasis on the perfect one-shot prompt to complete the task, and more ability to refine and even rethink as you go.
+That means less emphasis on a perfect one-shot prompt to complete the task, and more ability to refine and even rethink as you go.
 
 That's something other AI code generation tools have struggled with, leaving you tempted to throw away their code entirely if it's off-mark.
 Hell, there are even Undo / Redo buttons built into the UI to let you experiment and back out changes with confidence!
@@ -54,7 +54,7 @@ Not entirely sure how often I'll find myself firing this up vs a full Codespace,
 My experience so far has been mostly solo coding, but I noticed there are sharing features built into the Workspace IDE already.
 That will allow you to share a snapshot of your session showing your task, plan, and proposed code changes directly with others.
 
-That's bound to open up some interesting 'here's a draft plan I sketched out for you to review' scenarios, and could even more team collaboration earlier from Pull Request reviews into Plan reviews.
+That's bound to open up some interesting 'here's a draft plan I sketched out for you to review' scenarios, and could even move team collaboration earlier from Pull Request reviews into Plan reviews.
 
 ![Workspace Sharing](/assets/img/blog/workspace-sharing.png)
 
@@ -72,4 +72,4 @@ The Workspace IDE has a Session History page which will let you jump into previo
 
 For now, Copilot Workspace remains in GitHub's 'Experiments' library, with no firm release plan announced. 
 
-According to GitHub demand for the private preview has been incredibly high however, and I'd expect that we may see some announcements coming at Universe in October. But there's already lots to be excited about here, so watch this space...
+According to GitHub, demand for the private preview has been incredibly high however, and I'd expect that we may see some announcements coming at Universe in October. There's already lots to be excited about here, so watch this space...
