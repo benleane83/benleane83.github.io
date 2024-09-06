@@ -2,7 +2,7 @@
 layout: post
 title: 5 reasons you're going to love Copilot Workspace
 description: >
-  An early look at the new Copilot Workspace IDE, in private preview mode from GitHub and already packed with exciting features
+  An early look at the new Copilot Workspace IDE, in private preview mode from GitHub
 image: /assets/img/blog/workspace-banner.webp
 sitemap: true
 published: true
