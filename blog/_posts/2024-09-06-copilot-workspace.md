@@ -70,6 +70,6 @@ The Workspace IDE has a Session History page which will let you jump into previo
 
 ### Sounds great - when can I have it?
 
-For now, Copilot Workspace remains in GitHub's 'Experiments' library, with no firm release plan announced. 
+For now, Copilot Workspace remains in research stage within [GitHub Next](https://githubnext.com/projects/copilot-workspace/), with no firm release plan announced. 
 
 According to GitHub, demand for the private preview has been incredibly high however, and I'd expect that we may see some announcements coming at Universe in October. There's already lots to be excited about here, so watch this space...
