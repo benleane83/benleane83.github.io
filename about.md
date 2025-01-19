@@ -11,3 +11,5 @@ redirect_from:
 # About Me
 
 <!--author-->
+
+![Ben's Octocat](/assets/img/blog/bens_octocat.png)

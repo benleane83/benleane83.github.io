@@ -3,7 +3,7 @@ layout: post
 title: From Infrastructure-as-Code to Environment-as-Code: A Quick Intro
 description: >
   A look at Microsoft's current Environment-as-Code offerings and why they're becoming an essential part of a developer's toolkit.
-image: /assets/img/blog/environment-as-code-intro.png
+image: /assets/img/blog/environment-as-code-intro.jpg
 sitemap: true
 ---
 
@@ -37,6 +37,12 @@ There's a lot of choices there, and it's easy to get confused on which one you s
 - **GitHub Codespaces** provides a managed cloud-hosted experience that uses the Devcontainer spec for configuration (VS Code only)
 - **Azure Deployment Environments** and **Azure Developer CLI (AZD)** are for managing your app environments themselves in Azure
 
+
+![Comparison of Dev Box and Codespaces](/assets/img/blog/devbox-codespaces-comparison.png)
+
+Comparison of Dev Box and Codespaces
+{:.figcaption}
+
 What amazes me about these EaC tools is that many Microsoft and 3rd party templates and sample apps have adopted them in their repos, meaning you may already have them and didn't realise!
 
 ### How do I know what to look for?
@@ -48,6 +54,8 @@ What amazes me about these EaC tools is that many Microsoft and 3rd party templa
 ### Show me an example:
 A great intro to EaC concepts is the ToDo reference app, which comes in a few flavours such as this C# one:
 [Azure-Samples/todo-csharp-sql](https://github.com/Azure-Samples/todo-csharp-sql/)
+
+<img src="/assets/img/blog/todo-csharp-repo.png" alt="ToDo C# Repo" style="float: left; margin-right: 10px;">
 
 It features:
 - A devcontainer config for local debugging or Codespaces. It uses a .NET 8 container image, with .NET runtimes, nodeJS, AZD, and VS Code + a bunch of extensions added
@@ -66,5 +74,5 @@ If you're looking for Winget Configurations, there's also [Azure-Samples/eShopOn
 ### Want to learn more?
 - [Development containers](https://containers.dev/)
 - [GitHub Codespaces](https://github.com/features/codespaces)
-- [Microsoft Dev Box – Dev Workstation in the Cloud | Microsoft Azure](https://azure.microsoft.com/en-us/products/dev-box)
-- [WinGet Configuration | Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/configuration/)
+- [Microsoft Dev Box – Dev Workstation in the Cloud](https://azure.microsoft.com/en-us/products/dev-box)
+- [WinGet Configuration](https://learn.microsoft.com/en-us/windows/package-manager/configuration/)
