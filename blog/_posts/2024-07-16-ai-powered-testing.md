@@ -2,7 +2,7 @@
 layout: post
 title: AI-Powered Testing - How is quality engineering changing in 2024?
 description: >
-  An brief overview of new AI testing capabilities available and vendor options.
+  A brief overview of new AI testing capabilities available and vendor options.
 image: /assets/img/blog/ai-powered-testing-intro.png
 sitemap: true
 ---
