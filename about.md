@@ -12,4 +12,4 @@ redirect_from:
 
 <!--author-->
 
-![Ben's Octocat](/assets/img/blog/bens_octocat.png)
+![Ben's Octocat](/assets/img/blog/ben-octocat-small.png)

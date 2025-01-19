@@ -55,14 +55,14 @@ What amazes me about these EaC tools is that many Microsoft and 3rd party templa
 A great intro to EaC concepts is the ToDo reference app, which comes in a few flavours such as this C# one:
 [Azure-Samples/todo-csharp-sql](https://github.com/Azure-Samples/todo-csharp-sql/)
 
-<img src="/assets/img/blog/todo-csharp-repo.png" alt="ToDo C# Repo" style="float: left; margin-right: 10px;">
-
 It features:
 - A devcontainer config for local debugging or Codespaces. It uses a .NET 8 container image, with .NET runtimes, nodeJS, AZD, and VS Code + a bunch of extensions added
 - An AZD azure.yaml config which deploys the project to Azure: a VITE NodeJS App Service for the web frontend, and a C# App Service for the API app. It also features a SQL DB, Key Vault, and APIM instance all configured to work together
 - CI/CD pipelines for both Azure DevOps (in the .azdo folder) and GitHub Actions (in the .github/workflows folder), which run an azd based deploy
 
 See the project README for instructions on getting started locally or in Azure.
+
+![ToDo App](/assets/img/blog/todo-csharp.png)
     
 ### Too easy and want something more involved?
 Try [Azure-Samples/azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo) - a popular RAG accelerator app using Azure OpenAI, AI Search, Container Apps, Cosmos DB and many more Azure services. You'll find all the same config templates, allowing you to run this locally, in Codespaces, or fully in Azure.
