@@ -1,9 +1,9 @@
 ---
 layout: post
-title: From Infrastructure-as-Code to Environment-as-Code: A Quick Intro
+title: 5 reasons you're going to love EaC
 description: >
   A look at Microsofts current Environment as Code offerings and why they are becoming an essential part of a developers toolkit
-image: /assets/img/blog/workspace-banner.webp
+image: /assets/img/blog/environment-as-code-intro.jpg
 sitemap: true
 ---
 
