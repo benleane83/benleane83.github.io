@@ -12,14 +12,14 @@ sitemap: true
 One piece of common feedback I receive about GitHub Copilot and other AI coding assistants is this: 
 >"They're fine for common languages like .NET/JavaScript/Python, but they never work for my [insert custom language] application!"
 
-Copilot has good knowledge of public codebases on [GitHub.com](https://github.com) (there are over 25 million of them today), but there are many languages without a large volume of code there.
+Copilot has good knowledge of public codebases on [GitHub.com](https://github.com) (there are over 25 million of them today), but there are many languages without a large volume of code there:
 
 ADA, COBOL, FORTRAN, PL/I, ABAP, SAS, MUMPS, VHDL, RPG, REXX - just to name a few!
 They still play a vital role in some of the world's biggest enterprise systems, but the code is proprietary and rarely open-sourced.
 
 Luckily for developers of those languages, GitHub Copilot now comes with features that allow support for these languages too, without training a whole custom model.
 
-Here's an example of how I setup Visual Studio Code and GitHub Copilot to work on a T24 BASIC application (used in Temenos core banking applications):
+Here's an example of how I setup Visual Studio Code and GitHub Copilot to work on a **T24 BASIC** application (used in Temenos core banking applications):
 
 ### 1 - Download your codebase and open in VSCode
 I cloned this example codebase for T24 development, with a set of example files for my language: https://github.com/mathisi-io/t24dev. 
@@ -69,6 +69,6 @@ This [Copilot guide for Modernizing COBOL](https://docs.github.com/en/copilot/us
 
 You can apply the same recipe to any language/framework, or even just use it to inject your own coding standards into a workspace.
 
-VSCode may not be able to replace all functionality from a specialized IDE for your language, but this approach should give you an 'AI assistant boost' when you need one.
+VSCode may not replace all functionality from a specialized IDE for your language, but this approach should give you an 'AI assistant boost' when you need one.
 
 Have fun and I'd love to hear stories of what languages you've tried this on.
