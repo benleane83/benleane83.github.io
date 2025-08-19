@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How I Built a Launch-Ready App in a Week Using GitHub's Agents
+title: How I Built a Launch Ready App in a Week Using GitHub Agents
 description: >
-  How you can use Copilot to get improved results over almost any coding language or framework
+  How I used GitHub Spark and Copilot Agents to turn a weekend idea into a launch-ready app in just days
 image: /assets/img/blog/myfestivalplan-intro.png
 sitemap: true
 ---
