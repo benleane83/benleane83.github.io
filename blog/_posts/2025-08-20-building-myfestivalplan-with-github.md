@@ -23,7 +23,7 @@ Although Spark excels in great frontends with frameworks like React/Vite/Tailwin
 
 Here's the result of my first Spark run:
 
-![GitHub Spark in action building my first prototype](/assets/img/blog/myfestivalplan-spark.png){:width="70%"}
+![GitHub Spark in action building my first prototype](/assets/img/blog/myfestivalplan-spark.png){:width="75%"}
 
 GitHub Spark in action building my first prototype
 {:.figcaption}
@@ -40,7 +40,7 @@ After iterating in Spark for an hour or so, it was time to get hands-on with the
 
 Very well! Something I enjoyed was seeing my Copilot agents recommend new ways to validate my app and then make use of them once they existed in the repo. Early on my prototype app was lacking strong type checking, linting, and proper test coverage. But as these came online, agents would regularly use them to check their work. That creates this beautiful 'improvement cycle', where the better the codebase gets the more effective the agents are at doing work on it.
 
-![Example from one of my Coding Agent sessions](/assets/img/blog/myfestivalplan-codingagent.png){:width="50%"}
+![Example from one of my Coding Agent sessions](/assets/img/blog/myfestivalplan-codingagent.png){:width="75%"}
 
 Example from one of my Coding Agent sessions
 {:.figcaption}
@@ -69,7 +69,7 @@ This is where my own experience as a dev was crucial to spotting these and knowi
 
 You can see the final form of the app (and the website that goes with it) at [MyFestivalPlan](https://www.myfestivalplan.com/) now.
 
-![Example festival guide on MyFestivalPlan](/assets/img/blog/myfestivalplan-example.png){:width="50%"}
+![Example festival guide on MyFestivalPlan](/assets/img/blog/myfestivalplan-example.png){:width="75%"}
 
 Example festival guide on MyFestivalPlan
 {:.figcaption}
