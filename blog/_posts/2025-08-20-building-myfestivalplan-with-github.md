@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I Built a Launch Ready App in a Week Using GitHub Agents
+title: "How I Built a Launch Ready App in a Week Using GitHub Agents"
 description: >
   How I used GitHub Spark and Copilot Agents to turn a weekend idea into a launch-ready app in just days
 image: /assets/img/blog/myfestivalplan-intro.png
