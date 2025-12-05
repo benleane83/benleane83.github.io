@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Enterprise Server compatible agents with Copilot CLI"
 description: >
   An example of using the new GitHub Copilot CLI to re-create the GitHub.com Coding and Reviewer Agents within the GitHub Enterprise Server platform
-image: /assets/img/blog/ghes-coding-agent.webp
+image: /assets/img/blog/ghes-coding-agent-banner.png
 sitemap: true
 ---
 
@@ -17,9 +17,9 @@ But what about organizations blocked from hosting code on SaaS Cloud today for r
 
 There are many customers globally across Public Sector, Financial Services or other industries who use GitHub Enterprise Server (GHES) or similar self-hosted platforms to securely store code repositories within their own cloud tenant or datacenter. Today they miss out on the ability to leverage unattended agents within their GitHub environment, and must instead assign work via an IDE such as Visual Studio Code.
 
-## Introducing the GHES Coding Agent
+## Creating a GHES Coding Agent
 
-By combinining the GitHub CLI, Copilot CLI and GitHub Actions runtime, it's possible to re-create a similar Coding and Reviewer Agent experience as you see on GitHub.com today, but running within the GHES environment.
+By combining the GitHub CLI, Copilot CLI and GitHub Actions runtime, it's possible to re-create a similar Coding and Reviewer Agent experience as you see on GitHub.com today, but running within the GHES environment.
 You can try this out today by cloning my [GHES_CodingAgent](https://github.com/benleane83/GHES_CodingAgent) repository.
 
 The workflow is simple:
@@ -31,7 +31,12 @@ The workflow is simple:
 All of this happens automatically through GitHub Actions, with no human supervision required.
 
 **Important note:** Because the Copilot CLI still leverages the same cloud-hosted Copilot API and LLMs, this is not a suitable solution for organizations requiring full data sovereignty on all IT systems.
-But for those who already leverage the GitHub Copilot service today via the IDE, this is an interesting approach to bring unattended agents directly into GHES.
+But for those who already leverage the GitHub Copilot service today via the IDE, this is an interesting approach to bring unattended agents directly into the GHES platform.
+
+![Example output from the CLI Coding Agent](/assets/img/blog/ghes-coding-agent-example-1.png)
+
+Example output from the CLI Coding Agent
+{:.figcaption}
 
 ## How Copilot CLI powers the workflow
 
@@ -45,7 +50,7 @@ gh copilot -p "$ISSUE_DESCRIPTION" --mcp-config mcp-config.json
 
 The CLI takes your prompt (in this case, the GitHub issue description), processes it with the same AI models that power Copilot in your IDE, and executes the coding task autonomously.
 
-## Architecting reusable workflows for scale
+## Building reusable workflows for scale
 
 One of the challenges with rebuilding a core GitHub.com service in Actions/CLI was how to scale properly across multiple repos. 
 Maintaining local copies of YAML scripts in every repo isn't ideal, so the current prototype uses a hub-and-spoke model:
@@ -69,6 +74,11 @@ The same project also includes a **Copilot Reviewer Agent** that analyzes pull r
 - Downloads all changed files
 - Runs code review using the Copilot CLI
 - Posts actionable review comments directly on the PR
+
+![Example output from the CLI Reviewer Agent](/assets/img/blog/ghes-coding-agent-example-3.png){:width="75%"}
+
+Example output from the CLI Reviewer Agent
+{:.figcaption}
 
 ## Getting started
 
