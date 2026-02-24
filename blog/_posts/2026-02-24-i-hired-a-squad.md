@@ -3,7 +3,7 @@ layout: post
 title: "I hired an Agent Squad to work on my app - here's how it went"
 description: >
   Exploring the Squad project for doing multi-agent orchestration with Copilot CLI
-image: /assets/img/blog/squad-intro.jpg
+image: /assets/img/blog/squad-intro.png
 sitemap: true
 ---
 
