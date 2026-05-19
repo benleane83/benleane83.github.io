@@ -47,7 +47,7 @@ There are two pieces of the puzzle that can make a Vercel-like Azure experience 
 - **PR preview environments** where every PR gets a unique staging URL, automatically removed on close
 - **SWA Easy Auth** that adds Entra ID or GitHub login into your app with zero auth code
 
-**The Azure Developer CLI (`azd`)** is the other half. If you haven't read my [previous post on AZD](https://benleane83.github.io/blog/2025-03-12-azd-up/), the short version: `azd up` provisions your infrastructure from Bicep and deploys your app, all in one command. It handles Key Vault, Application Insights, Managed Identities, and all the integrations between them.
+**The Azure Developer CLI (`azd`)** is the other half. If you haven't read my [previous post on AZD](https://benleane83.github.io/blog/2025-03-12-azd-up/), the short version: `azd up` provisions your infrastructure from Bicep and deploys your app, all in one command. It handles PostgreSQL, Key Vault, Application Insights, Managed Identities, and all the integrations between them.
 
 Put these two together and you have the pieces of a seamless JAMstack onboarding experience. The missing part was a project generator that set it all up correctly from day one.
 
@@ -134,7 +134,7 @@ azd pipeline config --provider github --auth-type federated
 
 ## Want to try it out?
 
-The CLI itself is in early beta phase now, but if you want to kick the tyres, the repo is at [github.com/benleane83/create-azure-app](https://github.com/benleane83/create-azure-app). Issues and PRs welcome.
+The CLI itself is in early beta phase now, so if you want to kick the tyres the repo is at [github.com/benleane83/create-azure-app](https://github.com/benleane83/create-azure-app). Issues and PRs welcome.
 Feel free to adapt it to fit your own stack, and there's an example template uploaded at [github.com/benleane83/azure-swa-nextjs-postgres](https://github.com/benleane83/azure-swa-nextjs-postgres) if you want to preview the output.
 
 If you've been defaulting to other JAMstack hosting because Azure felt too complex to set up, try this out. It might surprise you!
