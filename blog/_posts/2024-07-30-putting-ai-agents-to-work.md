@@ -51,7 +51,7 @@ The first example that blew my mind was Autogen's [Custom Code Executor](https:/
 
 
 ~~~py
-! pip -qqq install pyautogen matplotlib yfinance
+! pip -qqq install ag2 matplotlib yfinance
 
 import os
 from typing import List
